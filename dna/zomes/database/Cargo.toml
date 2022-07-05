@@ -1,17 +1,15 @@
 [package]
-name = "lobby"
+name = "database"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
-name = "lobby"
+name = "database"
 
 [dependencies]
 serde = "1"
 derive_more = "0"
 
 hdk = {version="0.0.138", features = ["encoding"]}
-hc_zome_lobby_admin = {path = "../admin"}
-hc_zome_lobby_entries = {path = "../entries"}
-hc_zome_lobby_members = {path = "../members"}
+hc_zome_database_entries = {path = "../entries"}

@@ -1,12 +1,9 @@
 [workspace]
 resolver = "2"
 members = [
-    "dna/zomes/profiles",
-    "dna/zomes/comments",
-    "dna/zomes/reactions",
+    "dna/zomes/entries",
     "dna/zomes/lobby",
-    "dna/zomes/topics",
-    "dna/zomes/posts",
+    "dna/zomes/network",
 ]
 
 [profile.dev]

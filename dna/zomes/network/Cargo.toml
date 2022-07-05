@@ -1,0 +1,19 @@
+[package]
+name = "network"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "network"
+
+[dependencies]
+serde = "1"
+derive_more = "0"
+
+hdk = {version="0.0.138", features = ["encoding"]}
+hc_zome_roles = {git= "https://github.com/holochain-open-dev/membrane-roles"}
+hc_zome_invitations = {git = "https://github.com/holochain-open-dev/membrane-invitations"}
+hc_zome_agent_registration = {git = "https://github.com/holochain-open-dev/agent-registration/tree/sprout/zome"}
+hc_zome_network_entries = {path = "../entries"}
+hc_zome_network_permissions = {path = "../permissions"}

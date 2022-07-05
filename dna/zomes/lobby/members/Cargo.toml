@@ -1,0 +1,14 @@
+[package]
+name = "members"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "members"
+
+[dependencies]
+serde = "1"
+derive_more = "0"
+
+hdk = {version="0.0.138", features = ["encoding"]}
